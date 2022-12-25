@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="width: auto;">
+    <form method="post" action="https://book.niceinfos.com/frontend/assets/html_contact_form/api.php">
+        
+        <div style="font-size: 30px;">
+            <label for="fulname">帳號</label>
+        </div>
+
+        <div style="margin: 0;">
+            <input style="width: 200px;height: 30px;" type="text" name="account" id="fulname"value="" placeholder="請輸入帳號">
+        </div>
+
+    
+        <div style="font-size: 30px;">
+            <label for="password">密碼</label>
+        </div>
+        <div style="margin: 0;">
+            <input style="width: 200px;height: 30px;" type="password" name="password" id="password"value="" placeholder="請輸入密碼">
+        </div>
+
+        <div style="font-size: 30px;">
+            <label for="number">數字</label>
+        </div>
+        <div style="margin: 0;">
+            <input style="width: 200px;height: 30px;" type="number" name="money" id="number"value="" placeholder="請輸入密碼">
+        </div>
+
+        <div style="font-size: 30px;">
+            <label for="phone">電話</label>
+        </div>
+        <div style="margin: 0;">
+            <input style="width: 200px;height: 30px;" type="tel" name="phone"id="phone" value="" placeholder="請輸入密碼">
+        </div>
+
+        <h1>顏色</h1>
+        <div style="margin: 0;">
+            <input style="width: 200px;height: 30px;" type="color" name="bg-color" value="" placeholder="請輸入密碼">
+        </div>
+
+        <h1>日期</h1>
+        <div style="margin: 0;">
+            <input style="width: 200px;height: 30px;" type="date" name="date" value="" placeholder="請輸入密碼">
+        </div>
+
+        <h1>時間</h1>
+        <div style="margin: 0;">
+            <input style="width: 200px;height: 30px;" type="time" name="time" value="" placeholder="請輸入密碼">
+        </div>
+        <h1>性別</h1>
+        <div>
+            <select style="width: 200px;height: 30px;"name="county">
+                <option value="">請選擇</option>
+                <option value="TP">男</option>
+                <option>女</option>
+                
+            </select>
+        </div>
+        <h1>縣市</h1>
+        <div>
+            <select style="width: 200px;height: 60px;"name="county[]"multiple>
+                <option value="">請選擇縣市</option>
+                <option value="TP">台北</option>
+                <option>台中</option>
+                <option>高雄</option>
+            </select>
+        </div>
+
+
+       <div>
+        <textarea name="remake" id="" cols="30" rows="10"style="resize:none;"></textarea>
+       </div>
+
+        <div>
+           <button style="margin: 10px;"type="submit">發送</button>
+
+           <button style="margin: 10px;"type="button">預覽</button>
+
+            
+
+        
+        </div>
+
+    
+    </form>
+</body>
+</html>

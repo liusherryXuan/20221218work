@@ -7,9 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="http:/https://mail.google.com/mail/u/0/?pli=1#inbox/"> 
-        <img src="/image1225/image_123927839.JPG"  alt="this is cat" title="this is cat"style="float: none; display: block; " width="800"></a>
-   
+    <button id="do-btn">Click Me</button>
+
+    <script>
+        let btn = document.querySelector('#do-btn')
+    
+        btn.addEventListener('click', (e) => {
+            alert('You click me!')
+        })
+    </script>
 </body>
 </html>
-
