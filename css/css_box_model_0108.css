@@ -1,0 +1,14 @@
+.box {
+    width: 100px;
+    height: 100px;
+    line-height: 80px;
+    background-color: darkgray;
+    text-align: center;
+    margin: auto;
+    border: 2px sandybrown;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+
+
+}
