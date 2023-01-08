@@ -1,14 +1,43 @@
+.body {
+    background-color: rgb(63, 63, 55);
+}
 .box {
     width: 100px;
     height: 100px;
     line-height: 80px;
     background-color: darkgray;
-    text-align: center;
+    background-image: url(../image/photo-1563291074-2bf8677ac0e5.jpg);
+    background-size: cover;
+    text-align:justify;
     margin: auto;
-    border: 2px sandybrown;
+border: 2px sandybrown;
     padding: 10px;
     box-sizing: border-box;
     font-family: 'Dancing Script', cursive;
 
 
+}
+
+.box2 {
+    
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 2px coral;
+    background-color: rgb(87, 63, 26);
+    color: aquamarine;
+    padding: 10px;
+    margin: auto;
+    margin-top:10px;
+}
+
+.button {
+    background-color: brown;
+    color: aliceblue;
+    display:inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin: 20px 10px;
 }
