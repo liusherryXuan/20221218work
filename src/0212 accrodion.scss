@@ -1,0 +1,78 @@
+@import 'reset';
+
+.accrodion {
+    margin: 20px auto;
+
+    .tab {
+        border: 2px solid plum;
+        border-bottom-width: 0;
+
+        &:last-child {
+            border-bottom-width: 2px;
+        }
+
+
+        >label {
+            display: flex;
+            background: pink;
+            color: brown;
+            padding: 12px;
+            font-size: 20;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            cursor: pointer;
+            user-select: none;
+            justify-content: space-between;
+            align-items: center;
+
+            >div {
+                font-size: 26px;
+            }
+
+
+            &:hover {
+                background: rgb(156, 93, 114);
+                color: beige;
+            }
+
+            .close-icon {
+                display: none;
+            }
+
+
+
+        }
+
+        .tab-content {
+            font-weight: 300;
+            color: brown;
+            font-size: 20px;
+            padding: 10px;
+            display: none;
+        }
+
+        .tab-switch:checked {
+            +label {
+                background-color: rgb(156, 93, 114);
+                color: aliceblue;
+
+                .open-icon {
+                    display: none;
+                }
+
+                .close-icon {
+                    display: block;
+                }
+            }
+
+            ~.tab-content {
+                display: block;
+            }
+        }
+
+        .tab-switch {
+            display: none;
+        }
+    }
+
+}
