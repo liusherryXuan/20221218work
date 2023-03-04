@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/0212 layout_1.css">
 
 
@@ -45,7 +46,7 @@
             </div>
         </div>
     </div>
-    <div class="join-form" id="join-form-block">
+    <div class="join-form wow animate__animated animate__rotateIn">
         <div class="container">
             <div class="join-form-content">
                 <div class="content-wrap">
@@ -85,14 +86,14 @@
         <div class="process-wrap">
             <h2 class="slogan">課程顧問</h2>
             <div class="flow">
-                <div class="flow-item">
+                <div class="flow-item wow animate__animated animate__slideInRight">
                     <div class="flow-circle"></div>
                     <div class="flow-text">
                         <h3>需求訪談</h3>
                         <div>深度了解需求，給予最適合的建議</div>
                     </div>
                 </div>
-                <div class="flow-item">
+                <div class="flow-item wow animate__animated animate__slideInLeft">
                     <div class="flow-circle" style="background:rgb(252, 87, 115);"></div>
                     <div class="flow-text" style="background: rgb(224, 138, 153);">
                         <h3>課程搭配</h3>
@@ -100,7 +101,7 @@
                     </div>
                 </div>
 
-                <div class="flow-item">
+                <div class="flow-item wow animate__animated animate__slideInRight">
                     <div class="flow-circle" style="background:rgb(60, 76, 145);"></div>
                     <div class="flow-text" style="background: rgb(17, 113, 177);">
                         <h3>免費試聽</h3>
@@ -110,7 +111,7 @@
 
 
 
-                <div class="flow-item">
+                <div class="flow-item wow animate__animated animate__slideInLeft">
                     <div class="flow-circle"></div>
                     <div class="flow-text">
                         <h3>分期付費</h3>
@@ -118,7 +119,7 @@
                     </div>
                 </div>
 
-                <div class="flow-item">
+                <div class="flow-item wow animate__animated animate__slideInRight">
                     <div class="flow-circle" style="background:rgb(252, 87, 115);"></div>
                     <div class="flow-text" style="background: rgb(224, 138, 153);">
                         <h3>課後關懷</h3>
@@ -126,7 +127,7 @@
                     </div>
                 </div>
 
-                <div class="flow-item">
+                <div class="flow-item wow animate__animated animate__slideInLeft">
                     <div class="flow-circle" style="background:rgb(60, 76, 145);"></div>
                     <div class="flow-text" style="background: rgb(17, 113, 177);">
                         <h3>就業輔導</h3>
@@ -147,5 +148,9 @@
         </div>
     </div>
 </body>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 
 </html>
