@@ -1,0 +1,45 @@
+@import 'reset';
+
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: #898989;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &.active {
+        animation-name: move;
+        animation-duration: 3s;
+        animation-fill-mode: both; //停在開始與最後影格
+        // transform: translate(80%);
+        // background-color: blue;
+        // animation-iteration-count: 3; 執行次數:infinite 表示不停止，數字表示次數
+        // animation-direction: reverse;播放方向:逆向
+        // animation-direction: alternate;播放方向:輪播
+        // animation-direction: alternate-reverse;播放方向:逆向+輪播
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0);
+        background-color: #898989;
+    }
+
+    20% {
+        transform: translate(0, 100px) rotate(45deg);
+    }
+
+    50% {
+        transform: translate(40%, 300px) rotate(180deg);
+        background-color: rgb(217, 155, 155);
+    }
+
+    100% {
+        transform: translate(80%) rotate(360deg);
+        background-color: rgb(174, 174, 224);
+    }
+}

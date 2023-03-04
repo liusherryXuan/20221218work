@@ -113,58 +113,65 @@ a {
   display: inline-block;
 }
 
-.product {
-  width: 300px;
-  min-height: 200px;
-  background: #dedede;
-  padding: 15px;
-  margin: 0 15px;
-  margin-bottom: 15px;
-}
-.product .product-image {
-  width: 100%;
+.block {
+  width: 200px;
   height: 200px;
-  background-color: #936161;
-  color: #fff;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: rgb(221, 146, 160);
+  color: rgb(246, 244, 244);
+  transition-duration: 2s;
+  transition-timing-function: ease;
   position: relative;
-  overflow: hidden;
+  left: 0;
 }
-.product .product-image .product-image-wrap {
-  background-position: center;
-  background-image: url(../image/cat2.jpg);
-  background-size: cover;
+.block > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  transition: 5s;
+  cursor: pointer;
 }
-.product .product-image .discount-bar {
-  background: #dd8436;
-  width: 100%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: 700;
-  font-family: "Shantell Sans", cursive;
-  transform: rotate(45deg);
-  position: absolute;
-  right: -105px;
-  top: 10px;
+
+#switch-status {
+  display: none;
 }
-.product .product-image:hover .product-image-wrap {
-  transform: scale(1.5);
+#switch-status:checked ~ .func-block > label.run {
+  display: none;
 }
-.product .product-image:hover .discount-bar {
-  background-color: rgb(231, 67, 22);
-  color: #f8f2f2;
+#switch-status:checked ~ .func-block > label.back {
+  display: inline;
 }
-.product .product-title {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}/*# sourceMappingURL=0303_product_discount.css.map */
+#switch-status:checked ~ .block {
+  background: #1d4fb9;
+  font-size: 30px;
+  left: 50%;
+}
+
+.func-block {
+  margin-top: 20px;
+}
+.func-block > label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 10px 20px;
+  background-color: #dedede;
+  font-weight: 800;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.func-block > label.run {
+  background-color: #1d4fb9;
+  color: #fff;
+}
+.func-block > label.run:hover {
+  background-color: #12337a;
+}
+.func-block > label.back {
+  display: none;
+  background-color: #ff5656;
+  color: #fff;
+}
+.func-block > label.back:hover {
+  background-color: #af3030;
+}/*# sourceMappingURL=0303_transition.css.map */
