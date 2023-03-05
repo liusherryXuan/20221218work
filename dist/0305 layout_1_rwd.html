@@ -16,15 +16,16 @@
     <div class="header">
         <div class="container">
             <div class="header-content">
+                <input type="checkbox" id="mobile-menu-switch">
                 <div>
                     <a href="layout_1.html">
                         <img src="image3/logo.svg" alt="">
                     </a>
                 </div>
-                <div>
-                    <ul class="menu">
+                <div class="menu popup">
+                    <ul>
                         <li>
-                            <a href="#">
+                            <a href="#join-form-block">
                                 <div>About us</div>
                                 <div>關於赫綵</div>
                             </a>
@@ -43,11 +44,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="mobile-icon">
+                <label class="mobile-icon" for="mobile-menu-switch">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </label>
             </div>
         </div>
     </div>
@@ -156,6 +157,16 @@
 <script src="js/wow.min.js"></script>
 <script>
     new WOW().init();
+</script>
+
+<script>
+    let popupMenu = document.querySelector('.menu.popup');
+    if (popupMenu) {
+        popupMenu.addEventListener('click', () => {
+            let sw = document.querySelector('#mobile-menu-switch');
+            sw && sw.click();
+        });
+    }
 </script>
 
 </html>
