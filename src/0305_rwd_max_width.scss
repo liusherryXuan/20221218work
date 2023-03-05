@@ -1,0 +1,23 @@
+@import 'reset';
+
+.block {
+
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .block {
+        background-color: pink;
+        color: #81561d;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .block {
+        background-color: rgb(119, 3, 23);
+        color: #4e4a43;
+    }
+}
