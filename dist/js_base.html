@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    let firstName = 'Lin';
+    let lastName = 'David';
+    let fullName = firstName + ' ' + lastName;
+    fullName = `${firstName} ${lastName}`; // ES6 用法，可讀性較高
+    console.log(fullName);
+
+    let n1 = 1;
+    let n2 = 1.25
+    let n3 = n1 + n2;
+    let n4 = '10';
+    // let n5 = n1 + parseInt(n4, 10);
+    let n5 = n1 + +n4;
+    console.log(n5);
+
+    console.log(typeof n1.toString());
+    console.log(typeof n5);
+
+    let con = -1;
+
+    if (con) {
+        console.log(`${con} is ture.`)
+    }
+
+    let students = [10, 20, 30];
+
+    students.push(40);
+
+    console.log(students);
+
+    console.log(students[2]);
+
+    let scope = students.join(',');
+    console.log(scope, typeof scope, typeof students);
+
+    console.log(students.indexOf(200));
+
+    let index = students.indexOf(200);
+    console.log(index);
+    // students.splice(index, 1);
+    // console.log(students);
+
+    students.push(50);
+    students.push(60);
+    students.push(70);
+    students.push(80);
+
+    students.forEach((scope, index) => {
+        console.log(`index ${index}: ${scope}`);
+    })
+
+
+</script>
+</script>
+
+</html>
