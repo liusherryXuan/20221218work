@@ -1,0 +1,29 @@
+@import 'reset';
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .marble {
+        margin-bottom: 10.5pt;
+        margin: 0cm 0cm 0.0001pt;
+        font-size: 12pt;
+        font-family: Calibri, sans-serif;
+        font-size: 16.5pt;
+        color: #222222;
+        letter-spacing: .4pt;
+    }
+
+    .text {
+        text-align: justify;
+        margin-bottom: 10.5pt;
+        margin: 0cm 0cm 0.0001pt;
+        font-size: 12pt;
+        font-family: Calibri, sans-serif;
+        font-size: 13.0pt;
+        color: #222222;
+        letter-spacing: .4pt;
+    }
+
+}
